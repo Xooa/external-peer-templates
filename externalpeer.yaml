@@ -1,0 +1,15 @@
+imports:
+- path: externalpeer.jinja
+
+resources:
+- name: externalvm
+  type: externalpeer.jinja
+  properties:
+    zone: us-central1-a
+    startup-script: |
+      #!/bin/bash
+      sudo wget https://raw.githubusercontent.com/xooa/external-peer-templates/master/peersetup.sh
+      sudo chmod a+x /peersetup.sh
+      sudo //peersetup.sh
+      
+      
