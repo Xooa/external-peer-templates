@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo sed -i "s/token/$1/g" "externalpeer.yaml"
