@@ -11,9 +11,9 @@ sudo apt update -y
 sudo apt install jq -y
 
 # Authenticate token
-sudo curl  --header "Authorization: Bearer $1" --header "Content-Type: application/json"  --header "Accept: application/json" -X POST https://dashboardapi.prod1.xooa.com/peer/download | jq -r '.data' | base64 --decode > /tmp/xooa-peer.zip
+# sudo curl  --header "Authorization: Bearer $1" --header "Content-Type: application/json"  --header "Accept: application/json" -X POST https://dashboardapi.prod1.xooa.com/peer/download | jq -r '.data' | base64 --decode > /tmp/xooa-peer.zip
 # sudo curl  --header "Authorization: Bearer $1" --header "Content-Type: application/json"  --header "Accept: application/json" -X POST https://dashboardapi.xooa.com/peer/download | jq -r '.data' | base64 --decode > /tmp/xooa-peer.zip
-# sudo curl  --header "Authorization: Bearer $1" --header "Content-Type: application/json"  --header "Accept: application/json" -X POST http://22e8c6b8.ngrok.io/peer/download | jq -r '.data' | base64 --decode > /tmp/xooa-peer.zip
+sudo curl  --header "Authorization: Bearer $1" --header "Content-Type: application/json"  --header "Accept: application/json" -X POST http://aea5bd2b.ngrok.io/peer/download | jq -r '.data' | base64 --decode > /tmp/xooa-peer.zip
 
 # Extract peer zip and then run it
 sudo apt install -y unzip
