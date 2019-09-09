@@ -13,5 +13,5 @@ The downloaded peer is coupled with the External Ledger. It can be used to view 
 Deleting a peer will revoke the access of external peer. It will no longer sync with Xooa. Access to already synced data will remain available with the external peer.
 
 ## Steps to create external peer
-1. Go to https://xooa.com/blockchain/peers to create external peer
-2. Once external peer is created, follow steps on xooa console to deploy external peer on particular cloud platform.
+1. Go to https://xooa.com/blockchain/peers.
+2. Follow steps on xooa console to deploy external peer on particular cloud platform.
