@@ -6,9 +6,9 @@ Blockchain data may be exported outside Xooa by deploying an External Peer. Once
 
 You can also download external peer for the ledger that has been shared with you. The peer will keep in sync with all the shared ledgers as well.
 
-We provide a Docker Compose file. This file runs peer container in your local machine.
+We provide a Docker Compose file. This file runs peer container in your local machine, AWS, Azure, Google, or IBM.
 
-The downloaded peer is coupled with the External Ledger. It can be used to view transactions by visiting http://<peer ip>:8080/
+The downloaded peer is coupled with the External Ledger. It can be used to view transactions by visiting http://***peer_ip***:8080/
 
 Deleting a peer will revoke the access of external peer. It will no longer sync with Xooa. Access to already synced data will remain available with the external peer.
 
