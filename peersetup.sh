@@ -16,7 +16,7 @@ sudo apt install jq -y
 # sudo curl  --header "Authorization: Bearer $1" --header "Content-Type: application/json"  --header "Accept: application/json" -X POST https://dashboardapi.xooa.com/peer/download | jq -r '.data' | base64 --decode > /tmp/xooa-peer.zip
 
 # prod 1
-#sudo curl  --header "Authorization: Bearer $1" --header "Content-Type: application/json"  --header "Accept: application/json" -X POST https://dashboardapi.prod1.xooa.com/peer/download | jq -r '.data' | base64 --decode > /tmp/xooa-peer.zip
+sudo curl  --header "Authorization: Bearer $1" --header "Content-Type: application/json"  --header "Accept: application/json" -X POST https://dashboardapi.prod1.xooa.com/peer/download | jq -r '.data' | base64 --decode > /tmp/xooa-peer.zip
 
 # ci
 # sudo curl  --header "Authorization: Bearer $1" --header "Content-Type: application/json"  --header "Accept: application/json" -X POST https://dashboardapi.ci.xooa.io/peer/download | jq -r '.data' | base64 --decode > /tmp/xooa-peer.zip
