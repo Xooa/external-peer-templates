@@ -10,6 +10,10 @@ sudo apt install docker-ce -y
 sudo apt update -y
 sudo apt install jq -y
 
+sudo groupadd docker || true
+
+sudo usermod -aG docker $USER || true
+
 # Authenticate token
 
 # prod
