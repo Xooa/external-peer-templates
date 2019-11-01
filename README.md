@@ -1,5 +1,5 @@
 # external-peer-templates
-Templates in this repository are required to host external peer on AWS, Azure, Google, or IBM
+Templates in this repository are required to host external peer on AWS, Azure, Google, or IBM Cloud.
 
 # External Peer
 Blockchain data may be exported outside Xooa by deploying an External Peer. Once syncing is complete all your data will be available on the External Peer. You will have to create a new blockchain network because we do not export crypto material beyond what is is provided to download on the console for bootstrapping an External Peers to connect to Xooa network and sync your blockchain.
